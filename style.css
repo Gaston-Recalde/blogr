@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --light-red : hsl(356, 100%, 66%); /*(CTA text)*/
+    --very-light-red : hsl(355, 100%, 74%); /*(CTA hover background)*/
+    --very-dark-blue : hsl(208, 49%, 24%); /*(headings)*/
+
+    /* Neutral */
+
+    --white : hsl(0, 0%, 100%); /*(text)*/
+    --grayish-blue : hsl(240, 2%, 79%); /*(footer text)*/
+    --very-dark-grayish-blue : hsl(207, 13%, 34%); /*(body copy)*/
+    --very-dark-black-blue : hsl(240, 10%, 16%); /*(footer background)*/
+
+    /* Gradient */
+
+    /* Background gradient - Intro/CTA mobile nav: */
+
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+    --overpass: 'Overpass', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+}
+
+/* 
 
 
 
@@ -11,7 +52,110 @@
 
 
 
+ */
 
+body{
+    font-size: 16px;
+}
+
+.header{
+    background-color: red;
+}
+
+.header__nav{
+    display: flex;
+    /* max-width: 992px; */
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+
+.nav__a{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav__ul{
+    display: flex;
+}
+
+.ul__li{
+    margin: 0 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.ul__li > a {
+    color: var(--white);
+    text-decoration: none;
+    list-style: none;
+}
+
+nav > ul > li:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.nav__buttons{
+    display: none;
+}
+
+.nav__toggle{
+    color: var(--white);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav__ul{
+        flex-direction: column;
+        align-items: center;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 100%;
+        top: 60px;
+        width: 100%;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        transition: left 0.5s;
+    }
+    .ul__li{
+        padding: 20px 0;
+    }
+    .nav__toggle{
+        display: block;
+    }
+    .nav__ul__visible{
+        left: 0;
+    }
+    .nav__toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+
+    /* .nav__buttons{
+        display: block;
+    } */
+
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
