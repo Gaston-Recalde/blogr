@@ -56,10 +56,16 @@
 
 body{
     font-size: 16px;
+    font-family: var(--overpass);
 }
 
 .header{
+    background-image: url("./images/bg-pattern-intro-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: red;
+    padding-bottom: 150px;
+    border-radius: 0px 0px 0px 100px;
 }
 
 .header__nav{
@@ -114,7 +120,106 @@ nav > ul > li:hover{
     cursor: pointer;
 }
 
+.header__presentacion{
+    color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.presentacion__h1{
+    font-family: var(--overpass);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.presentacion__p{
+    font-family: var(--overpass);
+    margin-bottom: 40px;
+}
+
+
+.presentacion__buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons__button{
+    width: 125px;
+    height: 45px;
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--overpass);
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+}
+
+.button__sign{
+    color: var(--light-red);
+    background-color: var(--white);
+}
+
+.designed__section{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 175px;
+}
+
+.designed__h2, .article__h2{
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.article__img{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.article__editor, .infrastructure__div{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.editor__p, .infrastructure__p{
+    color: var(--very-dark-desaturated-blue);
+    line-height: 1.7;
+}
+
+.infrastructure__article{
+    margin: 50px 0;
+    background-color: var(--very-dark-desaturated-blue);
+    /* background-image: url('./images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: center; */
+    border-radius: 0 100px 0 100px;
+    padding-bottom: 75px;
+}
+
+.infrastructure__img{
+    max-width: 100%;
+    position: relative;
+    top: -175px
+}
+
+.infrastructure__h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: var(--white);
+}
+
+.infrastructure__p{
+    text-align: center;
+    color: var(--white);
+}
 
 
 
