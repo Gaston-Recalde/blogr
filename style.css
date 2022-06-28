@@ -26,8 +26,8 @@
 
     /* Background gradient - Intro/CTA mobile nav: */
 
-    --very-light-red: hsl(13, 100%, 72%);
-    --light-red: hsl(353, 100%, 62%);
+    --gradient-very-light-red: hsl(13, 100%, 72%);
+    --gradient-light-red: hsl(353, 100%, 62%);
 
     /* Background gradient - body: */
 
@@ -60,10 +60,11 @@ body{
 }
 
 .header{
-    background-image: url("./images/bg-pattern-intro-mobile.svg");
-    background-position: center;
+    /* background-image: url("./images/bg-pattern-intro-mobile.svg");
+    background-position: -396px;
     background-repeat: no-repeat;
-    background-color: red;
+    background-color: var(--light-red); */
+    background-image: linear-gradient(var(--gradient-very-light-red), var(--gradient-light-red));
     padding-bottom: 150px;
     border-radius: 0px 0px 0px 100px;
 }
@@ -74,7 +75,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: var(--white);
-    padding: 20px 30px;
+    padding: 40px 30px;
     margin: 0 auto;
 }
 
@@ -136,6 +137,7 @@ nav > ul > li:hover{
 .presentacion__p{
     font-family: var(--overpass);
     margin-bottom: 40px;
+    font-size: 18px;
 }
 
 
@@ -145,7 +147,7 @@ nav > ul > li:hover{
 }
 
 .buttons__button{
-    width: 125px;
+    width: 130px;
     height: 45px;
     color: var(--white);
     font-size: 16px;
@@ -191,14 +193,18 @@ nav > ul > li:hover{
 .editor__p, .infrastructure__p{
     color: var(--very-dark-desaturated-blue);
     line-height: 1.7;
+    font-weight: 500;
 }
 
 .infrastructure__article{
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    position: relative;
+    height: 650px;
     background-color: var(--very-dark-desaturated-blue);
-    /* background-image: url('./images/bg-pattern-circles.svg');
+    background-image: url('./images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: -140px -350px;
+    background-size: cover;
     border-radius: 0 100px 0 100px;
     padding-bottom: 75px;
 }
@@ -206,7 +212,12 @@ nav > ul > li:hover{
 .infrastructure__img{
     max-width: 100%;
     position: relative;
-    top: -175px
+    top: -175px;
+}
+
+.infrastructure__div{
+    position: relative;
+    top: -120px;
 }
 
 .infrastructure__h2{
@@ -221,9 +232,9 @@ nav > ul > li:hover{
     color: var(--white);
 }
 
-/* .laptop__section{
-    margin-bottom: 50;
-} */
+.laptop__section{
+    margin-bottom: 30px;
+}
 
 .footer{
     background-color: var(--very-dark-black-blue);
@@ -242,10 +253,6 @@ nav > ul > li:hover{
     text-align: center;
 }
 
-/* .titles__title{
-    margin-bottom: 15px;
-} */
-
 .titles__ul{
     margin: 25px 0;
 }
@@ -256,6 +263,10 @@ nav > ul > li:hover{
     color: var(--white);
     font-size: 18px;
     font-weight: 500;
+}
+
+.titles__title{
+    font-weight: 600;
 }
 
 .titles__li{
