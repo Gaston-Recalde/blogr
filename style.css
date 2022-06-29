@@ -278,11 +278,6 @@ nav > ul > li:hover{
     margin-bottom: 50px;
 }
 
-
-
-
-
-
 @media (max-width: 768px) {
     .nav__ul{
         flex-direction: column;
@@ -315,6 +310,47 @@ nav > ul > li:hover{
 
 }
 
+@media (min-width: 768px){
+    .footer{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    
+    /* .footer__logo{
+        margin-bottom: 50px;
+    } */
+    
+    .footer__titles{
+        text-align: start;
+    }
+    
+    .titles__ul{
+        margin: 35px 0;
+    }
+    
+    /* .titles__li, .titles__title{
+        text-decoration: none;
+        list-style: none;
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 500;
+    } */
+    
+    /* .titles__title{
+        font-weight: 600;
+    } */
+    
+    /* .titles__li{
+        margin-bottom: 10px;
+        color: var(--grayish-blue);
+    } */
+    
+    /* .titles__li:last-child{
+        margin-bottom: 50px;
+    } */
+}
 
-.attribution { font-size: 11px; text-align: center; color: var(--white); }
+
+.attribution { background-color: var(--very-dark-black-blue); font-size: 11px; text-align: center; color: var(--white); }
 .attribution a { color: var(--white); }
