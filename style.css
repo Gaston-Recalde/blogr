@@ -403,6 +403,36 @@ nav > ul > li:hover{
         display: none;
     }
 
+    .infrastructure__div{
+        /* margin: 0 auto; */
+        /* margin-bottom: 50px; */
+        
+        width: 35%;
+        position: absolute;
+        top: 115px;
+        right: 250px;
+    }
+
+    .infrastructure__h2{
+        text-align: start;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+    
+    .infrastructure__p{
+        text-align: start;
+    }
+
+    .infrastructure__article{
+        height: 400px;
+        background-size: auto;
+        background-position: -200px -630px;
+    }
+
+    .infrastructure__img{
+        top: -70px;
+    }
+
 }
 
 
