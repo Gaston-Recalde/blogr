@@ -365,6 +365,127 @@ nav > ul > li:hover{
 
 @media (min-width: 1440px){
 
+    .header{
+        /* background-image: url("./images/bg-pattern-intro-mobile.svg");
+        background-position: -396px;
+        background-repeat: no-repeat;
+        background-color: var(--light-red); */
+        background-image: linear-gradient(var(--gradient-very-light-red), var(--gradient-light-red));
+        padding-bottom: 150px;
+        border-radius: 0px 0px 0px 100px;
+    }
+    
+    .header__nav{
+        display: flex;
+
+        max-width: 1280px;
+        justify-content: flex-start;
+
+        align-items: center;
+        color: var(--white);
+        padding: 40px 30px;
+        margin: 0 auto;
+    }
+    
+    .nav__a{
+        font-size: 24px;
+        text-transform: uppercase;
+        color: var(--white);
+        text-decoration: none;
+        margin-left: 15px;
+
+        margin-right: 50px;
+    }
+    
+    .nav__ul{
+        display: flex;
+    }
+    
+    .ul__li{
+        margin: 0 15px;
+        text-decoration: none;
+        list-style: none;
+
+        margin-right: 40px;
+    }
+
+    .li__arrow{
+        margin-left: 10px;
+    }
+    
+    .ul__li > a {
+        color: var(--white);
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    nav > ul > li:hover{
+        transform: scale(1.2, 1.2);
+    }
+    
+    .nav__buttons{
+        display: block;
+        margin-left: 330px;
+    }
+    
+    .nav__toggle{
+        color: var(--white);
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        display: none;
+        cursor: pointer;
+    }
+    
+    .header__presentacion{
+        color: var(--white);
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .presentacion__h1{
+        font-family: var(--overpass);
+        font-weight: 700;
+        margin-bottom: 15px;
+
+        font-size: 48px;
+        margin-top: 25px;
+    }
+    
+    .presentacion__p{
+        font-family: var(--overpass);
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    
+    
+    .presentacion__buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .buttons__button{
+        width: 130px;
+        height: 45px;
+        color: var(--white);
+        font-size: 16px;
+        font-family: var(--overpass);
+        font-weight: 700;
+        background-color: transparent;
+        border-radius: 50px;
+        border: 1px solid var(--white);
+    }
+    
+    .button__sign{
+        color: var(--light-red);
+        background-color: var(--white);
+        margin-left: 50px;
+    }
+
+    /* Inicio MAIN */
+
     .designed__section{
         background-image: url('./images/illustration-editor-desktop.svg');
         background-repeat: no-repeat;
