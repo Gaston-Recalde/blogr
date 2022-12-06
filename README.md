@@ -15,11 +15,11 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](./images/Blogr.png)
+![](./images/blogr.png)
 
 ### Links
 
-- Live Site URL: (https://kaleidoscopic-taiyaki-bb4833.netlify.app)
+- Live Site URL: (https://whimsical-faloodeh-7aeaec.netlify.app)
 
 ## My process
 
